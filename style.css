@@ -124,6 +124,8 @@ h1:hover {
   border: 0.25rem solid;
   border-image: conic-gradient(from var(--angle), crimson, white) 1;
   animation: 10s rotate linear infinite;
+  aspect-ratio: 1 / 0;
+  overflow: hidden;
 }
 
 /* Box Shadow */
@@ -151,23 +153,12 @@ h1:hover {
 }
 
 
-
-
-
 /* foto focus */
-
-
-
-#card {
-  aspect-ratio: 1 / 0;
-  overflow: hidden;
-}
 
 #card:hover img {
   filter: url(#noise);
   animation: pulse 800ms ease-in-out;
 }
-
 
 
 @keyframes pulse {
@@ -181,7 +172,6 @@ h1:hover {
     scale: 1.09;
   }
 }
-
 
 
 .anzu-title img {
@@ -209,6 +199,8 @@ h1:hover {
   cursor: pointer;
 }
 
+/* header kalp iconu */
+
 .header-ico {
   position: initial;
   width: 5%;
@@ -223,6 +215,3 @@ h1:hover {
 .header-ico:hover {
   opacity: 1;
 }
-
-
-/*  border */
