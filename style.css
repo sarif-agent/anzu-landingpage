@@ -72,7 +72,7 @@ h1:hover {
   align-items: center;
   gap: 10px;
   padding: 20px 0;
-  background-color: rgb(156, 152, 167);
+  background-color: rgb(220, 167, 170);
   padding-bottom: 35px;
 }
 
@@ -81,6 +81,7 @@ h1:hover {
   width: 80%;
 
 }
+
 
 .banner-text {
   display: flex;
@@ -93,7 +94,7 @@ h1:hover {
 /* banner title animaton */
 
 .banner-title {
-  color: rgb(216, 93, 216);
+  color: rgb(172, 46, 44);
   font-family: 'Cute Font', sans-serif;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: rgb(220, 179, 171);
@@ -107,13 +108,10 @@ h1:hover {
 
 @keyframes bannertitle {
   50% {
-    text-shadow: 10px 20px 30px purple;
-    color: violet;
+    text-shadow: 10px 10px 25px purple;
+    color: rgb(227, 31, 22);
   }
 }
-
-
-
 
 
 /* border asıl resmin üzerine nasıl geçer? */
@@ -122,16 +120,39 @@ h1:hover {
   flex: 1;
   display: flex;
   align-items: center;
-  border: solid violet 0.25rem;
-  border-radius: 1rem;
-  animation: bannerphoto 5s infinite;
+  --angle: 0deg;
+  border: 0.25rem solid;
+  border-image: conic-gradient(from var(--angle), crimson, white) 1;
+  animation: 10s rotate linear infinite;
 }
 
-@keyframes bannerphoto {
+/* Box Shadow */
+
+/* .gradient-border {
+  animation: bannerphoto 5s infinite;
+} */
+
+/* @keyframes bannerphoto {
   50% {
     box-shadow: 5px 30px 35px 0px purple;
   }
+} */
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
 }
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+
+
+
 
 /* foto focus */
 
@@ -202,3 +223,6 @@ h1:hover {
 .header-ico:hover {
   opacity: 1;
 }
+
+
+/*  border */
