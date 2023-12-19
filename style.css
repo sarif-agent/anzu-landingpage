@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(203, 171, 111);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.header-tab {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  width: 80%;
+}
+
+.scroll-links {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  padding: 0;
+  align-items: center;
+}
+
+.scroll-links li a {
+  text-decoration: none;
+  color: white;
+  font-style: italic;
+}
+
+.scroll-links li a:hover {
+  color: violet;
+}
+
+.header-logo {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgb(31, 31, 31);
+}
+
+.header-logo h1 {
+  color: rgb(255, 0, 234);
+  font-family: fantasy;
+}
+
+h1:hover {
+  color: violet;
+}
+
+.head-image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.head-image img {
+  width: 10%;
+}
+
+.anzu-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+  background-color: rgb(156, 152, 167);
+  padding-bottom: 35px;
+}
+
+.title {
+  display: flex;
+  width: 80%;
+
+}
+
+.banner-text {
+  display: flex;
+  gap: 10px;
+  flex-flow: column;
+  flex: 1;
+  justify-content: center;
+}
+
+/* banner title animaton */
+
+.banner-title {
+  color: rgb(216, 93, 216);
+  font-family: 'Cute Font', sans-serif;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgb(220, 179, 171);
+  letter-spacing: 1px;
+  font-size: 36px;
+  margin-bottom: 4px;
+  font-family: fantasy;
+  animation: bannertitle 5s infinite;
+}
+
+
+@keyframes bannertitle {
+  50% {
+    text-shadow: 10px 20px 30px purple;
+    color: violet;
+  }
+}
+
+
+
+
+
+/* border asıl resmin üzerine nasıl geçer? */
+
+#card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border: solid violet 0.25rem;
+  border-radius: 1rem;
+  animation: bannerphoto 5s infinite;
+}
+
+@keyframes bannerphoto {
+  50% {
+    box-shadow: 5px 30px 35px 0px purple;
+  }
+}
+
+/* foto focus */
+
+
+
+#card {
+  aspect-ratio: 1 / 0;
+  overflow: hidden;
+}
+
+#card:hover img {
+  filter: url(#noise);
+  animation: pulse 800ms ease-in-out;
+}
+
+
+
+@keyframes pulse {
+
+  from,
+  to {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.09;
+  }
+}
+
+
+
+.anzu-title img {
+  max-width: 100%;
+}
+
+.banner-message {
+  font-size: 25px;
+  font-family: 'Cute Font', sans-serif;
+  color: blueviolet;
+  font-style: italic;
+}
+
+.banner-button button {
+  background-color: plum;
+  color: white;
+  text-decoration: none;
+  border-radius: 2rem;
+  font-weight: bold;
+}
+
+.banner-button button:hover {
+  color: rgb(255, 106, 255);
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.header-ico {
+  position: initial;
+  width: 5%;
+  padding-left: 10px;
+  /* Geçiş/hover efekti başlangıç görünmezliği */
+  opacity: 0;
+  /* Geçiş efekti */
+  transition: opacity 0.3s ease;
+}
+
+.header-logo:hover+.header-ico,
+.header-ico:hover {
+  opacity: 1;
+}
