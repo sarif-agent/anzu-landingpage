@@ -45,15 +45,15 @@
         <defs>
           <filter id="noise">
             <feTurbulence baseFrequency="0.35,0.31" seed="31" type="fractalNoise" result="static">
-              <animate attributeName="seed" values="0;100;0" dur="900ms" repeatCount="1" begin="card.mouseenter" />
+              <animate attributeName="seed" values="0;100;0" dur="100ms" repeatCount="1" begin="card.mouseenter" />
             </feTurbulence>
             <feDisplacementMap in="SourceGraphic" in2="static" scale="0">
-              <animate attributeName="scale" values="0;100;0" dur="900ms" repeatCount="1" begin="card.mouseenter" />
+              <animate attributeName="scale" values="0;100;0" dur="100ms" repeatCount="1" begin="card.mouseenter" />
             </feDisplacementMap>
           </filter>
         </defs>
       </svg>
-      <div id="card" class="gradient border">
+      <div id="card" class="gradient-border">
         <img src="images/anzubannertitle.jpg" alt="Anzu Sleeping on Pikachu Bed, uWu">
       </div>
     </div>
