@@ -175,7 +175,9 @@ h1:hover {
 
 
 .anzu-title img {
-  max-width: 100%;
+  height: 534px;
+  width: auto;
+  object-fit: cover;
 }
 
 .banner-message {
@@ -214,4 +216,49 @@ h1:hover {
 .header-logo:hover+.header-ico,
 .header-ico:hover {
   opacity: 1;
+}
+
+
+.slide {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  margin-bottom: -20px;
+}
+
+
+.slide-show {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  width: 70%;
+}
+
+.gallery {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  gap: 20px;
+}
+
+.photo {
+  flex: 1;
+}
+
+.photo img {
+  height: 250px;
+  width: 250px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: solid #ffffff 4px;
+  border-radius: 2rem;
+  box-shadow: 8px 8px 30px 0px plum;
+}
+
+.photo img {
+  margin-top: 12px;
+  font-weight: 650;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Metal', cursive;
 }
