@@ -7,6 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
   <title>♥ Anzu ♥</title>
 </head>
 
@@ -14,7 +17,7 @@
   <div class="header">
     <div class="header-tab">
       <div class="header-logo">
-        <h1>Princess Anzu Jaamu</h1>
+        <h1>Cosplayer Anzu Jaamu</h1>
       </div>
       <img src="images/head-ico.png" alt="Hearts side by side" class="header-ico">
       <div class="head-image">
@@ -27,6 +30,7 @@
       </ul>
     </div>
   </div>
+
   <div class="anzu-title">
     <div class="title">
       <div class="banner-text">
@@ -37,10 +41,18 @@
           <p>Anzujaamu is the cosplayer which made japan people "jealous".</p>
         </div>
         <div class="banner-button">
-          <button>Who is Anzu?</button>
+          <button onclick="scrollToElement('hop')">Who is Anzu?</button>
         </div>
       </div>
-      <!-- Banner Photo Static Effect with SVG -->
+      <script>
+        function scrollToElement(elementId) {
+          var element = document.getElementById(elementId);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      </script>
+      <!-- Banner Photo Static Effect with SVG (which doesn't work...) -->
       <svg style="display: none;">
         <defs>
           <filter id="noise">
@@ -86,6 +98,41 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="quote">
+    <div class="quote-text">
+      <p id="hop">AnzuJaamu, also known simply as Anzu, is a Turkish cosplayer from Ankara, Turkey. The nickname Anzu is
+        a
+        Japanese word that means "Apricot." Anzu is known for her unique fashion style, including "Creepy-cute,
+        fairy-kei, Japanese street fashion," and has been actively cosplaying since 2014.
+
+        Anzu runs a fashion and cosplay blog dedicated to showcasing her costumes and outfits, as well as featuring
+        items from her sponsors. She is also recognized for her exceptional makeup skills. Additionally, Anzu frequently
+        participates in cosplay events, either as a jury member or an honored guest.
+
+        Despite being one of the best cosplayers in Turkey, Anzu has gained international recognition for her talent in
+        the world of cosplay.</p>
+    </div>
+  </div>
+
+  <div class="pop">
+    <div class="pop-up">
+      <div class="pop-t">
+        <h4>Join the Coven of Apricot Witch Today!</h4>
+        <p>You can join Anzu's Discord to get instant news!</p>
+      </div>
+      <div class="i-button">
+        <p>
+          <a href="https://discord.com/invite/hHc3SYuuwx">Join Now! 😻</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Copyright © <a href="https://github.com/sarif-agent">sarif-agent</a> 2023</p>
+  </div>
 
 </body>
 
