@@ -168,7 +168,6 @@ body {
   border: 0.25rem solid;
   border-image: conic-gradient(from var(--angle), rgb(199, 7, 102), rgb(225, 183, 173), rgb(203, 58, 157), rgb(203, 58, 157)) 1;
   animation: 10s rotate linear infinite;
-  aspect-ratio: 1 / 0;
   overflow: hidden;
 }
 
@@ -204,7 +203,6 @@ body {
 /* foto focus */
 
 #card:hover img {
-  filter: url(#noise);
   animation: pulse 800ms ease-in-out;
 }
 
@@ -309,25 +307,33 @@ body {
 
 .photo {
   flex: 1;
+  animation: 10s rotate linear infinite;
 }
+
+.photo:hover img {
+  animation: pulse 800ms ease-in-out;
+}
+
+
 
 .photo img {
   height: 250px;
   width: 250px;
   aspect-ratio: 1;
   object-fit: cover;
-  border: solid rgb(174, 203, 242) 4px;
+  /* border: solid rgb(174, 203, 242) 4px; */
   border-radius: 2rem;
-  box-shadow: 8px 8px 30px 0px rgb(155, 93, 145);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
-.photo p {
-  margin-top: 12px;
-  font-weight: 650;
-  font-size: 18px;
-  text-align: center;
-  font-family: 'Metal', cursive;
+.gallery2 {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  gap: 20px;
 }
+
 
 /* SLIDE/GALLERY PART END */
 
