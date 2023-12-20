@@ -167,7 +167,6 @@ body {
   --angle: 0deg;
   border: 0.25rem solid;
   border-image: conic-gradient(from var(--angle), rgb(199, 7, 102), rgb(225, 183, 173), rgb(203, 58, 157), rgb(203, 58, 157)) 1;
-  animation: 10s rotate linear infinite;
   overflow: hidden;
 }
 
@@ -203,7 +202,7 @@ body {
 /* foto focus */
 
 #card:hover img {
-  animation: pulse 800ms ease-in-out;
+  animation: pulse 2400ms zoom;
 }
 
 
@@ -240,26 +239,65 @@ body {
 .banner-button {
   display: flex;
   justify-content: center;
-
   padding: 25px;
 }
 
 .banner-button button {
-  background-color: rgb(218, 36, 18);
   color: rgb(221, 221, 221);
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
-  border: solid rgb(119, 119, 119) 1.3px;
-
   border-radius: 1rem;
   font-weight: bold;
   padding: 10px;
 }
 
+/* Banner Buton Hover effect */
+
 .banner-button button:hover {
   color: rgb(132, 0, 255);
   background-color: rgb(255, 255, 255);
   cursor: pointer;
+}
+
+.banner-button button {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 10px;
+  background: rgb(255, 255, 255);
+  font-size: 20px;
+  border: solid rgb(175, 175, 175) 0.5px;
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2rem;
+  transition: all 1s;
+
+  &:after,
+  &:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+  }
+
+  &:after {
+    top: -1px;
+    left: -1px;
+    border-top: 5px solid rgb(72, 48, 84);
+    border-left: 5px solid rgb(72, 48, 84);
+  }
+
+  &:before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 5px solid rgb(199, 7, 102);
+    border-right: 5px solid rgb(199, 7, 102);
+  }
+
+  &:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
 }
 
 /* header kalp iconu */
@@ -415,3 +453,5 @@ body {
   text-decoration: none;
   color: crimson;
 }
+
+/* zart */
