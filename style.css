@@ -43,24 +43,61 @@ body {
   display: flex;
   flex-shrink: 0;
   align-items: center;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: rgb(31, 31, 31);
 }
 
 .header-logo h1 {
   color: rgb(255, 0, 234);
-  font-family: fantasy;
+  font-family: 'Silkscreen', sans-serif;
+  font-size: 20px;
+
+  cursor: default;
 }
 
-h1:hover {
+.header-logo h1:hover {
   color: violet;
 }
 
 .head-image {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
+
+
+/* header anime kızı icon */
+.header-ico2 {
+  position: initial;
+  width: 5%;
+  padding-left: 15px;
+  /* Geçiş/hover efekti başlangıç görünmezliği */
+  opacity: 0;
+  /* Geçiş efekti */
+  transition: opacity 0.3s ease;
+}
+
+.head-image a:hover+.header-ico2,
+.header-ico2:hover {
+  opacity: 1;
+}
+
+/* header anime kızı icon bitiş */
+.head-image p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding-right: 2.5px;
+  text-shadow: 2px 2px 5px purple;
+}
+
+.head-image p:hover {
+  color: rgb(255, 0, 255);
+  text-shadow: 2px 2px 5px purple;
+}
+
+.head-image a {
+  text-decoration: none;
+}
+
 
 .head-image img {
   width: 10%;
@@ -79,7 +116,6 @@ h1:hover {
 .title {
   display: flex;
   width: 80%;
-
 }
 
 
@@ -89,6 +125,11 @@ h1:hover {
   flex-flow: column;
   flex: 1;
   justify-content: center;
+}
+
+.header-tab p {
+  color: white;
+  text-align: center;
 }
 
 /* banner title animaton */
