@@ -249,7 +249,7 @@ body {
   border-radius: 1rem;
   font-weight: bold;
   padding: 10px;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 /* Banner Buton Hover effect */
@@ -342,7 +342,7 @@ body {
 .slide-show h3 {
   font-family: 'Silkscreen', sans-serif;
   color: rgb(255, 0, 234);
-  text-shadow: violet 0px 2px 1px, darkviolet -1px 3px 1px, darkmagenta -2px 5px 1px, darkorchid 0px 5px 1px, rgb(138, 0, 0) -1px 6px 1px, rgb(94, 0, 0) -2px 8px 1px;
+  text-shadow: rgb(119, 0, 119) 0px 2px 1px, darkviolet -1px 3px 1px, darkmagenta -2px 5px 1px, darkorchid 0px 5px 1px, rgb(138, 0, 0) -1px 6px 1px, rgb(94, 0, 0) -2px 8px 1px;
 }
 
 
@@ -361,8 +361,6 @@ body {
 .photo:hover img {
   animation: pulse 700ms ease-in-out;
 }
-
-
 
 .photo img {
   height: 250px;
@@ -398,7 +396,7 @@ body {
   border-radius: 1rem;
   font-weight: bold;
   padding: 10px;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .gallery-button button:hover {
@@ -459,22 +457,24 @@ body {
   align-items: center;
   padding: 50px 0;
   background-color: rgb(11, 13, 16);
-  background-image: url(./images/anzu2b-background2.jpg);
-  min-height: 450px;
+  background-image: url(./images/anzu_bg.png);
+  min-height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: center center;
 }
 
 .quote-text {
   display: flex;
   font-family: 'Athiti', sans-serif;
-  width: 70%;
+  width: 60%;
   flex-flow: column;
   font-size: 22px;
   font-style: italic;
   font-weight: 600;
   color: #cccccc;
+  text-shadow: 2px 7px 5px rgb(0, 0, 0),
+    0px -4px 10px rgb(0, 0, 0);
 }
 
 /* QUOTE SCROLL */
@@ -488,25 +488,31 @@ body {
 .pop {
   display: flex;
   justify-content: center;
-  padding: 100px 0;
+  padding: 50px 0;
+  background-color: rgb(160, 132, 108);
+  background-image: url(./images/anzu-brave.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .pop-up {
   display: flex;
-  justify-content: space-around;
+  flex-flow: column;
+  gap: 25px;
   align-items: center;
-  background-color: black;
-  padding: 50px 150px;
+  padding: 25px;
   border-radius: 12px;
-  width: 80%;
+  width: 75%;
 }
 
-.i-button a {
-  color: white;
-  border: solid #f9faf8 2px;
-  padding: 10px 40px;
+.i-button button {
+  color: rgb(11, 13, 16);
+  background-color: rgba(255, 0, 0, 0.295);
+  padding: 10px 40px 10px 40px;
   border-radius: 5px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .i-button:hover a {
@@ -516,14 +522,14 @@ body {
 .pop-t h4 {
   font-size: 24px;
   font-weight: 700;
-  color: #f9faf8;
+  color: rgb(11, 13, 16);
 }
 
 .pop-t p {
   padding-top: 10px;
   font-size: 18px;
   font-weight: 300;
-  color: #E5E7EB;
+  color: rgb(11, 13, 16);
 }
 
 .footer {
