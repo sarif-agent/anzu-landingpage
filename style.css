@@ -258,7 +258,7 @@ img {
   border-radius: 1rem;
   font-weight: bold;
   padding: 10px;
-  opacity: 1;
+  opacity: 0.9;
   box-shadow: rgba(0, 0, 0, 0.56) 1px 6px 90px 4px;
 }
 
