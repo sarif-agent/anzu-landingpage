@@ -8,6 +8,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+
+
 .header {
   display: flex;
   justify-content: center;
@@ -363,10 +371,16 @@ body {
   margin-bottom: 30px;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .photo {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .photo:hover img {
@@ -388,6 +402,9 @@ body {
   margin-bottom: 15px;
   padding-bottom: 20px;
   gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -477,6 +494,7 @@ body {
 
 .quote-text {
   display: flex;
+  max-width: 1440px;
   font-family: 'Athiti', sans-serif;
   width: 60%;
   flex-flow: column;
@@ -503,7 +521,8 @@ body {
   padding: 50px 0;
   background-color: rgb(160, 132, 108);
   background-image: url(./images/anzu-brave.jpg);
-  background-size: cover;
+  min-height: 10px;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -516,6 +535,7 @@ body {
   align-items: center;
   padding: 30px;
   width: 75%;
+  max-width: 1440px;
 }
 
 .i-button button {
@@ -564,7 +584,7 @@ body {
 
 .footer a {
   text-decoration: none;
-  color: crimson;
+  color: violet;
 }
 
 /* ufak padding ayarları */
@@ -572,3 +592,33 @@ body {
 #banner-padding {
   padding: 10px 0;
 }
+
+/* gallery animation */
+
+/* @keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+  %0 {
+    opacity: 0;
+  }
+
+  /* 50% {
+    opacity: 1;
+  }
+
+  100% {} */
+
+}
+
+.gallery img {
+  animation: fade linear;
+  animation-timeline: view();
+}
+
+*/
