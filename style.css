@@ -51,6 +51,7 @@ img {
 
 .header-logo {
   display: flex;
+  flex: 1;
   flex-shrink: 0;
   align-items: center;
 }
@@ -84,10 +85,10 @@ img {
   transition: opacity 0.3s ease;
 }
 
-.head-image a:hover+.header-ico2,
+/* .head-image a:hover+.header-ico2,
 .header-ico2:hover {
   opacity: 1;
-}
+} */
 
 /* header anime kızı icon bitiş */
 .head-image p {
@@ -315,7 +316,7 @@ img {
 
 .header-ico {
   position: initial;
-  width: 5%;
+  width: 8%;
   padding-left: 10px;
   /* Geçiş/hover efekti başlangıç görünmezliği */
   opacity: 0;
@@ -323,7 +324,7 @@ img {
   transition: opacity 0.3s ease;
 }
 
-.header-logo:hover+.header-ico,
+h1:hover+.header-ico,
 .header-ico:hover {
   opacity: 1;
 }
@@ -336,9 +337,10 @@ img {
   justify-content: center;
   padding: 30px 0 30px 0;
   margin-bottom: -20px;
-  background-color: rgb(99, 75, 111);
+  background-color: rgba(59, 0, 94, 0.658);
 }
 
+/* rgba(196, 188, 192, 0.637) */
 
 .slide-show {
   display: flex;
@@ -554,6 +556,7 @@ img {
 .i-button:hover button {
   color: rgb(31, 55, 165);
   animation: pulse 450ms ease-in-out;
+  border-color: blueviolet;
 }
 
 .pop-t h4 {
@@ -587,6 +590,10 @@ img {
   color: violet;
 }
 
+.footer a:hover {
+  text-decoration: underline;
+}
+
 /* ufak padding ayarları */
 
 #banner-padding {
@@ -594,7 +601,7 @@ img {
 }
 
 
-
+/* text ve fotoğraflar için vanilla css ile scroll animasyonu  */
 
 @keyframes textfade {
   from {
@@ -606,7 +613,13 @@ img {
   }
 }
 
-.quote p {
+.links {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.quote-text {
   animation: textfade linear both;
   animation-timeline: view();
   animation-range: entry 35% cover 50%;
@@ -621,6 +634,12 @@ h4+p {
 
 .gallery1,
 .gallery2 img {
+  animation: textfade linear both;
+  animation-timeline: view();
+  animation-range: entry 21% cover 50%;
+}
+
+.gallery-button button {
   animation: textfade linear both;
   animation-timeline: view();
   animation-range: entry 21% cover 50%;
