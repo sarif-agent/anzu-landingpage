@@ -249,7 +249,8 @@ body {
   border-radius: 1rem;
   font-weight: bold;
   padding: 10px;
-  opacity: 0.8;
+  opacity: 0.9;
+  box-shadow: rgba(0, 0, 0, 0.56) 1px 6px 90px 4px;
 }
 
 /* Banner Buton Hover effect */
@@ -327,7 +328,7 @@ body {
   justify-content: center;
   padding: 30px 0 30px 0;
   margin-bottom: -20px;
-  background-color: rgb(55, 39, 66);
+  background-color: rgb(99, 75, 111);
 }
 
 
@@ -337,12 +338,22 @@ body {
   flex-flow: column;
   width: 70%;
   font-size: larger;
+  max-width: 1600px;
 }
 
 .slide-show h3 {
   font-family: 'Silkscreen', sans-serif;
-  color: rgb(255, 0, 234);
-  text-shadow: rgb(119, 0, 119) 0px 2px 1px, darkviolet -1px 3px 1px, darkmagenta -2px 5px 1px, darkorchid 0px 5px 1px, rgb(138, 0, 0) -1px 6px 1px, rgb(94, 0, 0) -2px 8px 1px;
+  flex-shrink: 0;
+  padding-bottom: 25px;
+  text-align: center;
+  color: rgb(218, 36, 18);
+  font-family: Silkscreen, sans-serif;
+  -webkit-text-stroke: 0.5px rgb(107, 0, 0);
+  margin-bottom: -10px;
+  letter-spacing: 1px;
+  font-size: 32px;
+  text-shadow: rgb(0, 0, 0) 0px 2px 1px, rgb(138, 0, 0) -1px 3px 1px, rgb(94, 0, 0) -2px 5px 1px, rgb(0, 0, 0) 0px 5px 1px, rgb(138, 0, 0) -1px 6px 1px, rgb(94, 0, 0) -2px 8px 1px;
+  animation: 8s ease 0s infinite normal none running bannertitle;
 }
 
 
@@ -367,7 +378,6 @@ body {
   width: 250px;
   aspect-ratio: 1;
   object-fit: cover;
-  /* border: solid rgb(174, 203, 242) 4px; */
   border-radius: 2rem;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
@@ -396,7 +406,8 @@ body {
   border-radius: 1rem;
   font-weight: bold;
   padding: 10px;
-  opacity: 0.8;
+  opacity: 0.9;
+  box-shadow: rgba(11, 13, 16, 0.61) 0px 4px 21px 4px;
 }
 
 .gallery-button button:hover {
@@ -488,52 +499,64 @@ body {
 .pop {
   display: flex;
   justify-content: center;
+  font-family: 'Silkscreen', sans-serif;
   padding: 50px 0;
   background-color: rgb(160, 132, 108);
   background-image: url(./images/anzu-brave.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .pop-up {
+  text-align: center;
   display: flex;
   flex-flow: column;
   gap: 25px;
   align-items: center;
-  padding: 25px;
-  border-radius: 12px;
+  padding: 30px;
   width: 75%;
 }
 
 .i-button button {
   color: rgb(11, 13, 16);
-  background-color: rgba(255, 0, 0, 0.295);
-  padding: 10px 40px 10px 40px;
-  border-radius: 5px;
+  background-color: rgba(217, 91, 63, 0.555);
+  border: 3px inset #ff6550;
+  font-family: 'Silkscreen', sans-serif;
+  padding: 10px 40px;
+  border-radius: 10px;
   text-decoration: none;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  font-weight: 500;
 }
 
-.i-button:hover a {
-  color: pink;
+.i-button:hover button {
+  color: rgb(31, 55, 165);
+  animation: pulse 450ms ease-in-out;
 }
 
 .pop-t h4 {
   font-size: 24px;
   font-weight: 700;
   color: rgb(11, 13, 16);
+  text-shadow: 3px 50px 70px rgb(0, 0, 0),
+    0px -1px 3px rgb(0, 0, 0);
 }
 
 .pop-t p {
   padding-top: 10px;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 600;
   color: rgb(11, 13, 16);
 }
 
+.pop-symbol {
+  padding-top: 10px;
+}
+
 .footer {
-  background-color: black;
+  background-color: rgb(11, 13, 16);
   text-align: center;
   color: white;
   padding: 10px 0;
@@ -544,4 +567,8 @@ body {
   color: crimson;
 }
 
-/* zart */
+/* ufak padding ayarları */
+
+#banner-padding {
+  padding: 10px 0;
+}
