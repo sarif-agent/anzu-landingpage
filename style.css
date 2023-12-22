@@ -258,7 +258,7 @@ img {
   border-radius: 1rem;
   font-weight: bold;
   padding: 10px;
-  opacity: 0.9;
+  opacity: 1;
   box-shadow: rgba(0, 0, 0, 0.56) 1px 6px 90px 4px;
 }
 
@@ -425,7 +425,7 @@ h1:hover+.header-ico,
   border-radius: 1rem;
   font-weight: bold;
   padding: 10px;
-  opacity: 0.9;
+  opacity: 1;
   box-shadow: rgba(11, 13, 16, 0.61) 0px 4px 21px 4px;
 }
 
