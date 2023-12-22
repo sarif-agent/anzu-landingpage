@@ -616,12 +616,12 @@ img {
 h4+p {
   animation: textfade linear both;
   animation-timeline: view();
-  animation-range: entry 30% cover 50%;
+  animation-range: entry 30% cover 32%;
 }
 
 .gallery1,
 .gallery2 img {
   animation: textfade linear both;
   animation-timeline: view();
-  animation-range: entry 50% cover 100%;
+  animation-range: entry 30% cover 50%;
 }
