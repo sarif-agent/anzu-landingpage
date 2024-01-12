@@ -386,10 +386,6 @@ h1:hover+.header-ico,
   align-items: center;
 }
 
-.photo:hover img {
-  animation: pulse 700ms ease-in-out;
-}
-
 .photo img {
   height: 250px;
   width: 250px;
