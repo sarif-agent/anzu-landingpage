@@ -6,6 +6,9 @@ title.addEventListener('mouseover', () => {
   SPARKLE.play();
 });
 
+img = document.querySelectorAll('img');
+img.setAttribute("draggable", false);
+
 
 
 function scrollToElement(elementId) {
