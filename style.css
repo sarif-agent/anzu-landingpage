@@ -548,7 +548,7 @@ h1:hover+.header-ico,
   text-decoration: none;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .i-button:hover button {
